@@ -1,0 +1,46 @@
+/*Additional_3.1*/
+.wrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.post_card{
+    width: 200px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+/*Additional_3.2*/
+.wraper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.post-card-list{
+    width: 600px;
+    margin: 10px;
+    background-color: cornflowerblue;
+}
+/*Additional_3.4*/
+.simpson{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+.simpson img{
+    width: 200px;
+    height: 270px;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+.product img{
+    width: 200px;
+    height: 270px;
+}
