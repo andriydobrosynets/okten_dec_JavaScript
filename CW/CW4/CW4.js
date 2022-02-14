@@ -68,15 +68,16 @@ function sumElement (array){
     let sum = 0;
     for (const arrayElement of array) {
         sum = arrayElement + sum;
-        sArefm = sum/summArray.length;
     }
+    sArefm = sum/summArray.length;
     document.write(sArefm);
+    return sArefm;
 }
 sumElement(summArray)
 
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
 
-function number(){
+function number(a){
     let min = arguments[0]
     let max = arguments[0]
     for (const numberElement of arguments) {
@@ -95,7 +96,7 @@ console.log("min ",min)
 
 function arrElement(x) {
     let emptyArr=[]
-    for (i = 0; i < x; i++) {
+    for (let i = 0; i < x; i++) {
         emptyArr[i]=Math.round(Math.random()*100)
     }
     function fan(x) {
@@ -110,7 +111,7 @@ arrElement(10)
 
 function arrElement(x,b) {
     let emptyArr=[]
-    for (i = 0; i < x; i++) {
+    for ( let i = 0; i < x; i++) {
         emptyArr[i]=Math.round(Math.random()*b)
     }
     function fan(x) {
@@ -126,7 +127,7 @@ arrElement(10,100)
 let array =  [1,2,3]
 let newArray =[]
 function revers(){
-    for (i=array.length-1;i>=0;i--){
+    for ( let i=array.length-1;i>=0;i--){
         newArray.push(array[i])
     }
     console.log(newArray)
