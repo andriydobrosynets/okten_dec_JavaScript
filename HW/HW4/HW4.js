@@ -19,11 +19,11 @@ kolo(2)
 // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
 
 function cylinder(r,h,pi=3.14) {
-    Sbich=2*pi*r*h;
-    Socn=Math.pow(r,2)*pi;
-    S=Sbich+2*Socn;
-    console.log(S)
-    return S;
+    s_bich=2*pi*r*h;
+    s_ocn=Math.pow(r,2)*pi;
+    s=s_bich+2*s_ocn;
+    console.log(s)
+    return s;
 }
 cylinder(5,2);
 
