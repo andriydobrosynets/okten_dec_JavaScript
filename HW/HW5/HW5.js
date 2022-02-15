@@ -76,11 +76,11 @@ ulLi('OKTEN')
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
 
 let ulLi = (text,a) => {
+    document.write(`<ol>`)
     for (let i = 0; i < a; i++) {
-        document.write(`<ul>
-            <li>${text}</li>
-         </ul>`)
+        document.write    (`<li>${text}</li>`)
     }
+    document.write(`</ol>`)
 }
 ulLi('OKTEN',6)
 
@@ -109,12 +109,12 @@ let animals = [
     { name: 'Pufic', type: 'Humster', age: 2.5 },
     { name: 'Randy', type: 'dog', age: 12 },
 ];
-let myAnimals = () => {
-    for (let i = 0; i < animals.length; i++) {
-        const animal = animals[i];
-        document.write(`<ul>
-             <li>${animal.name} -${animal.type} -${animal.age}  </li>
-             </ul>`)
+let myAnimals = (pets) => {
+    document.write(`<ol>`)
+    for (let i = 0; i < pets.length; i++) {
+        const animal = pets[i];
+        document.write (`<li>${animal.name} -${animal.type} -${animal.age}  </li>`)
     }
+    document.write(`<\ol>`)
 }
-myAnimals()
+myAnimals(animals)
