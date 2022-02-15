@@ -53,7 +53,7 @@ console.log(minNumber(array))
 let array = [32,4,45,54,75,23,1,42,21,43]
 let sumMas = (arr) => {
     let sum = 0
-    for(var i = 0; i < arr.length; i++) {
+    for(let i = 0; i < arr.length; i++) {
         sum += arr[i]
     }
     return sum
