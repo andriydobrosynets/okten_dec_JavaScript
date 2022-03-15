@@ -28,9 +28,9 @@ form_one.onsubmit = function (e) {
 // -створити форму з інпутами для model,type та volume автівки.
 //     при відпарвці форми об'єкти зберігаються в масиві в локальному сховищі.
 
-let inp1 = document.getElementById('model')
-let inp2 = document.getElementById('type')
-let inp3 = document.getElementById('volume')
+let input_one = document.getElementById('model')
+let input_two = document.getElementById('type')
+let input_three = document.getElementById('volume')
 let button = document.getElementById('button')
 let construct = function (model, type , volume){
     let obj = {model : model , type: type, volume: volume}
@@ -40,7 +40,7 @@ let construct = function (model, type , volume){
 }
 button.onclick = (e) =>{
     e.preventDefault()
-    construct(inp1.value, inp2.value, inp3.value)
+    construct(input_one .value, input_two.value, input_three.value)
 }
 
 // зразок
