@@ -26,6 +26,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
 // https://jsonplaceholder.typicode.com/comments
 
 
+
 fetch(`https://jsonplaceholder.typicode.com/comments`)
     .then(value => value.json())
     .then(comments => {
